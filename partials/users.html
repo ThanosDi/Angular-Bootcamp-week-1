@@ -1,0 +1,21 @@
+<div ng-show="currentUser" class="currentuser">
+	<h2>User details for <span style="color:#f06722">{{currentUsername}}</span> <a ng-click="currentUserEdit =!currentUserEdit" ><img width="30" height="30" src="img/edit_pencil.png"/></a></h2>
+		<ul >
+			<li ng-repeat="(currentkey,currentuser) in users[currentUsername] ">
+			<span ng-switch on="currentkey">
+				<span ng-switch-when="Interests">
+				<label for="inputdefault">{{currentkey}}</label>
+					<ul>
+						<li ng-repeat="(key, value) in currentuser">
+							<span ng-hide="currentUserEdit">{{value}}</span>
+							<input class="form-control" type="text" name="{{currentkey}}" ng-model="users[currentUsername][currentkey][key]" ng-show="currentUserEdit" value="{{value}}" />
+						</li>
+					</ul>
+				</span> 
+				<span ng-switch-default><label for="inputdefault">{{currentkey}}</label> <span ng-hide="currentUserEdit">{{currentuser}}</span> <input class="form-control" type="text" name="{{currentkey}}" ng-model="users[currentUsername][currentkey]" ng-show="currentUserEdit" value="{{currentuser}}" /></span>  
+		    </span>				
+			</li>
+		</ul>
+		<button class="btn btn-warning pull-right" ng-show="currentUserEdit" ng-click="currentUserEdit =!currentUserEdit">Save</button>	
+	
+</div>

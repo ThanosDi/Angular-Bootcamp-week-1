@@ -1,0 +1,60 @@
+body{
+	background:url("../img/cream_dust.png");
+}
+.singleapp h1{
+	text-align: center;
+	color:#f06722;
+}
+.singleapp ol{
+	padding:0px;
+	list-style-position: inside;
+}
+.singleapp ul{
+
+	list-style-type: none;
+	border: 2px dashed rgb(216, 216, 216);
+  border-radius: 4px;
+  padding: 10px;
+
+}
+.active-users  li{
+	transition:all 0.3s;
+
+}
+.active-users  li.active{
+	color:#f06722;
+
+}
+.active-users  a{
+	text-decoration:  none;
+
+}
+
+
+.active-users  li:hover{
+	color:#f06722;
+}
+
+.singleapp ul li ul{
+	padding-left:10px;
+	list-style-type: none;
+	list-style-position: inside; 
+	border:0px;
+}
+.singleapp .currentuser a{
+	transition:all 0.3s;
+	cursor: pointer;
+}
+.singleapp .currentuser a:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+.singleapp .btn.btn-success{
+	margin-top:10px;
+}
+.singleapp input{
+	margin-bottom:5px;
+}
+label{
+	display: block;
+}

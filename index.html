@@ -1,0 +1,29 @@
+<html ng-app="app">
+<head>
+	<title>singleApp</title>	
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script type="text/javascript" src="js/controllers/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container singleapp" ng-controller="AppCtrl">
+		<div class="row">
+			<h1>Single Application Angular</h1>
+			<hr>
+			<div class="pull-left col-md-6 active-users">
+				<h2>Active Users:</h2>
+				<ol >
+					<a href=""  ng-repeat="(key,user) in users" ng-click="setUser(user,key)">
+						<li  ng-class="{'active':selectedTab == {{$index}} ,'':selectedTab != {{$index}}}" ng-click="selectedTab = $index">{{key | uppercase}}</li>
+					</a>
+				</ol>			
+			</div>
+			<div ng-include="details" class="col-md-6">
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
