@@ -1,0 +1,90 @@
+[
+	{		
+		"Fullname": "Thanos Diamantidis",
+		"City": "Athens",
+		"E-mail":"Thanosdi@live.com",
+		"Age":"29",
+		"Interests": {
+			"1": "Programming",
+			"2": "Music",
+			"3": "Games",
+			"4": "Outdoor Activities"
+		},
+		"Profession": "Web Developer",
+		"Company": "AndKo",
+		"Favorite Language": "Javascript"
+	},
+	{
+		"Fullname": "Kostas Sarantopoulos",
+		"City": "Athens",
+		"E-mail":"cybergtb@hotmail.com",
+		"Age":"30",
+		"Interests": {
+			"1": "Programming",
+			"2": "Music",
+			"3": "Games",
+			"4": "Outdoor Activities"
+		},
+		"Profession": "Web Designer",
+		"Company": "E-table",
+		"Favorite Language": "Javascript"
+	},
+	 {
+		"Fullname": "I would like to know also",
+		"City": "Everywhere",
+		"E-mail":"PUB@PRESTASHOP.COM",
+		"Age":"45",
+		"Interests": {
+			"1": "Hacking",
+			"2": "Placeholder",
+			"3": "Prestashop"
+		},
+		"Profession": "Unknown",
+		"Company": "Prestashop Inc.",
+		"Favorite Language": "Swahili"
+	},
+	{		
+		"Fullname": "Thanos Diamantidis",
+		"City": "Athens",
+		"E-mail":"Thanosdi@live.com",
+		"Age":"29",
+		"Interests": {
+			"1": "Programming",
+			"2": "Music",
+			"3": "Games",
+			"4": "Outdoor Activities"
+		},
+		"Profession": "Web Developer",
+		"Company": "AndKo",
+		"Favorite Language": "Javascript"
+	},
+	{
+		"Fullname": "Kostas Sarantopoulos",
+		"City": "Athens",
+		"E-mail":"cybergtb@hotmail.com",
+		"Age":"30",
+		"Interests": {
+			"1": "Programming",
+			"2": "Music",
+			"3": "Games",
+			"4": "Outdoor Activities"
+		},
+		"Profession": "Web Designer",
+		"Company": "E-table",
+		"Favorite Language": "Javascript"
+	},
+	 {
+		"Fullname": "I would like to know also",
+		"City": "Everywhere",
+		"E-mail":"PUB@PRESTASHOP.COM",
+		"Age":"45",
+		"Interests": {
+			"1": "Hacking",
+			"2": "Placeholder",
+			"3": "Prestashop"
+		},
+		"Profession": "Unknown",
+		"Company": "Prestashop Inc.",
+		"Favorite Language": "Swahili"
+	}
+]

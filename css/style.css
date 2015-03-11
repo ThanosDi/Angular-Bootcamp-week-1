@@ -1,6 +1,17 @@
 body{
 	background:url("../img/cream_dust.png");
 }
+hr{
+	margin-top: 10px;
+  margin-bottom: 10px;
+}
+h3{
+	margin:0px;
+	margin-bottom: 10px;
+}
+ol li{
+	cursor: pointer;
+}
 .singleapp h1{
 	text-align: center;
 	color:#f06722;
@@ -10,27 +21,20 @@ body{
 	list-style-position: inside;
 }
 .singleapp ul{
-
 	list-style-type: none;
 	border: 2px dashed rgb(216, 216, 216);
   border-radius: 4px;
   padding: 10px;
-
 }
 .active-users  li{
 	transition:all 0.3s;
-
 }
 .active-users  li.active{
 	color:#f06722;
-
 }
 .active-users  a{
 	text-decoration:  none;
-
 }
-
-
 .active-users  li:hover{
 	color:#f06722;
 }
@@ -58,3 +62,19 @@ body{
 label{
 	display: block;
 }
+.menu {
+
+}
+.menu .col-md-4{
+	border-left: 1px solid #f06722;
+	text-align: center;
+}
+.menu .col-md-4:last-child{
+	border-right: 1px solid #f06722;
+}
+.menu .col-md-4 a{
+	font-size: 30px;
+	text-decoration: none;
+}
+
+

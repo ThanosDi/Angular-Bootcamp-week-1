@@ -1,0 +1,21 @@
+<div class="col-md-6 active-users">
+	<h2>Active Users:</h2>
+		<hr>
+	<ol>	
+		<li ng-repeat="(key,user) in users | filter: query | orderBy:sort:direction" ng-class="{'active':selectedTab == {{$index}} ,'':selectedTab != {{$index}}}" ng-click="setUser(user,key)">{{user.$$hashKey | uppercase}}</li>
+	
+	</ol>			
+</div>
+<div class="col-md-6 active-users" ng-show="currentUser">
+	<h2>Show User: <span style="color: #f06722;">{{currentUser.$$hashKey}} - {{currentUser.id}}</span></h2>
+	<hr>
+	<div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<h3>About</h3>
+			</div>
+			<div class="col-md-12">{{currentUser.body}}</div>
+		</div>
+	</div>		
+</div>

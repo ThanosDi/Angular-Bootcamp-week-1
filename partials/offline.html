@@ -1,0 +1,35 @@
+<div class="col-md-6 active-users">
+	<h2>Active Users:</h2>
+		<hr>
+	<ol>	
+		<li ng-repeat="(key,user) in users | filter: query | orderBy:sort:direction" ng-click="setUser(user,key)">{{user.name | uppercase}} - <span style="color: #f06722;">{{user.balance}}</span></li>
+	
+	</ol>			
+</div>
+<div class="col-md-6 active-users" ng-show="currentUser">
+	<h2>Show User: <span style="color: #f06722;"> {{currentUser.name}}</span></h2>
+	<hr>
+	<div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<h3>About</h3>
+				<img src="{{currentUser.picture}}" />			
+			</div>
+			<div class="col-md-12">{{currentUser.about}}</div>
+		</div>
+		<div class="row">			
+			<div class="col-md-12">
+				<h3>Information</h3>
+				<ul>
+					<li><b>E-mail:</b> {{currentUser.email}}</li>
+					<li><b>phone:</b> {{currentUser.phone}}</li>
+					<li><b>address:</b> {{currentUser.address}}</li>
+					<li><b>company:</b> {{currentUser.company}}</li>
+					<li><b>Age:</b> {{currentUser.age}}</li>
+					<li><b>Balance:</b> {{currentUser.balance}}</li>
+				</ul>
+			</div>
+		</div>
+	</div>		
+</div>
